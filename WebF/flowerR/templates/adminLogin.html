@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %} HomePage {% endblock %}
+
+{% block content %}
+<section id="adminLogin">
+    <div class="adminLogin container">
+        <div class="loginForm">
+            <h2>Đăng nhập</h2>
+            <form action="/admin/login" id="adminLoginForm" name="adminLoginForm">
+                <div class="input-data">
+                    <input type="text" id="adminUN" name="adminUN" required>
+                    <div class="underline"></div>
+                    <label for="">Tên tài khoản</label>
+                </div>
+                <div class="input-data">
+                    <input type="password" id="adminPw" name="adminPw" required>
+                    <div class="underline"></div>
+                    <label for="">Password</label>
+                </div>
+                <div class="loginOption">
+                    <div class="btn btn-input btn-submit">
+                        <div class="inner"></div>
+                        <input type="submit" value="Đăng nhập">
+                    </div>
+                </div>
+
+            </form>
+            <p>Bạn chưa là một thành viên của Floral Sensei?</p>
+            <p>Hãy <a href="/contact">liên hệ</a> với chúng tôi ngay!</p>
+        </div>
+    </div>
+</section>
+<!-- <script src="../static/adminBase.js"></script> -->
+<script src="../static/adminlogin.js"></script>
+{% endblock %}

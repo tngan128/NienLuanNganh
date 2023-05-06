@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %} HomePage {% endblock %}
+
+{% block content %}
+<!-- <div class="col-6 mx-auto mt-5 text-center">
+    <form action="/recognize" method="post" enctype="multipart/form-data">
+        <p><input type="file" name="img" class="form-control" autocomplete="off" required></p>
+        <p><input type="submit" value="submit" class="btn btn-info"></p>
+    </form>
+    {% if fileURL %}
+        <div class="mt-5">
+            <img src="./static/uploads/image.jpg" style="width: 400px;">
+            {% if flowerName %}
+                <h6>Kết quả dự đoán: hoa {{ flowerName }}</h6>
+            {% endif %}
+        </div>
+    {% endif %}
+</div> -->
+
+<section id="about">
+    <div class="about container">
+        <div class="col-left">
+            <div class="uploaded-image">
+                <input type="file" accept="image/*" name="img" id="img" style="display: none;">
+                <label for="img" style="cursor: pointer;"><i class="fa-thin fa-plus fa-7x";"></i></i></label>
+            </div>
+        </div>
+        <div class="col-right">
+            <h1 class="section-title">just one <span>click</span></h1>
+            <h2>Tải ảnh lên ngay tại khung bên trái</h2>
+            <p>Khám phá vẻ đẹp của hoa thông qua công nghệ nhận diện hoa tiên tiến của chúng tôi. Chỉ cần tải lên hình
+                ảnh hoa của bạn, và chúng tôi sẽ giúp bạn xác định tên gọi và cung cấp thông tin chi tiết về các loài
+                hoa.</p>
+            <a href="#" class="cta" style="display: none;">Download Resume</a>
+        </div>
+    </div>
+</section>
+<script src="../static/recognize.js"></script>
+{% endblock %}

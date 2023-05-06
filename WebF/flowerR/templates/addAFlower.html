@@ -1,0 +1,76 @@
+{% extends "baseAdmin.html" %}
+
+{% block title %} HomePage {% endblock %}
+
+{% block content %}
+<section id="addFlower">
+    <div class="addFlower container">
+        <div class="addFlowerForm">
+            <h2>Thêm thông tin hoa</h2>
+            <form action="/flowers/add" id="flower-form" name="flower-form">
+                <div class="input-data">
+                    <input type="text" id="flowerTen" name="flowerTen" required>
+                    <div class="underline"></div>
+                    <label for="">Tên hoa</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="flowerTenKH" name="flowerTenKH" required>
+                    <div class="underline"></div>
+                    <label for="">Tên khoa học</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="flowerGioi" name="flowerGioi" required>
+                    <div class="underline"></div>
+                    <label for="">Giới (Kingdom)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="flowerNganh" name="flowerNganh" required>
+                    <div class="underline"></div>
+                    <label for="">Ngành (Division)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="flowerLop" name="flowerLop" required>
+                    <div class="underline"></div>
+                    <label for="">Lớp (Class)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="flowerBo" name="flowerBo" required>
+                    <div class="underline"></div>
+                    <label for="">Bộ (Order)</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="flowerHo" name="flowerHo" required>
+                    <div class="underline"></div>
+                    <label for="">Họ (Family)</label>
+                </div>
+                <div class="input-data input-textarea">
+                    <textarea rows="1" cols="80" id="flowerMota" name="flowerMota" required></textarea>
+                    <div class="underline"></div>
+                    <label for="">Mô tả</label>
+                </div>
+                <div class="input-data input-textarea">
+                    <textarea rows="1" cols="80" id="flowerDacdiem" name="flowerDacdiem" required></textarea>
+                    <div class="underline"></div>
+                    <label for="">Đặc điểm</label>
+                </div>
+                <div class="input-data input-textarea">
+                    <textarea rows="1" cols="80" id="flowerNoipb" name="flowerNoipb" required></textarea>
+                    <div class="underline"></div>
+                    <label for="">Nơi phân bố</label>
+                </div>
+                <div class="addFlowerOption">
+                    <div class="btn btn-input btn-submit">
+                        <div class="inner"></div>
+                        <input type="submit" value="Thêm mới">
+                    </div>
+                    <div class="btn btn-input btn-cancel">
+                        <div class="inner"></div>
+                        <input type="reset" value="Hủy bỏ">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<script src="../static/addAFlower.js"></script>
+{% endblock %}

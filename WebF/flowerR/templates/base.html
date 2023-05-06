@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../static/base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="/">
+                        <h1>FLORAL SENSEI</h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="/" data-after="Home">Trang chủ</a></li>
+                        <li><a href="/recognize" data-after="Recognite">Nhận diện</a></li>
+                        <li><a href="/flowers" data-after="Flowers">Thông tin Hoa</a></li>
+                        <li><a href="/contact" data-after="Contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% block content%}
+    {% endblock%}
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1>Can Tho University</h1>
+            </div>
+            <h2>College of information and communication technology</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/vi/6/6c/Logo_Dai_hoc_Can_Tho.svg" />
+                </div>
+            </div>
+            <p>Copyright © 2023 Can Tho University</p>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+    <script src="../static/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>

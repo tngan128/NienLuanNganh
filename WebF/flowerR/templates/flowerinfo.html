@@ -1,0 +1,41 @@
+{% extends 'baseAdmin.html' if 'adminID' in session else 'base.html' %}
+
+{% block title %} HomePage {% endblock %}
+
+{% block content %}
+<section id="addFlower">
+    <div class="addFlower container">
+        <div class="flowerInfoPanel">
+            <h2 id="flowerTen">Tên hoa</h2>
+            <div class="flowerInfo">
+                <h3>Tên khoa học:</h3>
+                <p id="flowerTenKH">Tên khoa học</p>
+                <h3>Giới (Kingdom):</h3>
+                <p id="flowerGioi">Giới (Kingdom)</p>
+                <h3>Ngành (Division):</h3>
+                <p id="flowerNganh">Ngành (Division)</p>
+                <h3>Lớp (Class):</h3>
+                <p id="flowerLop">Lớp (Class)</p>
+                <h3>Bộ (Order):</h3>
+                <p id="flowerBo">Bộ (Order)</p>
+                <h3>Họ (Family):</h3>
+                <p id="flowerHo">Họ (Family)</p>
+                <h3>Mô tả:</h3>
+                <p id="flowerMota">Mô tả</p>
+                <h3>Đặc điểm:</h3>
+                <p id="flowerDacdiem">Đặc điểm</p>
+                <h3>Nơi phân bố:</h3>
+                <p id="flowerNoipb">Nơi phân bố</p>
+            </div> 
+            <div class="addFlowerOption">
+                <div class="btn btn-modify" id="backButton">
+                    <div class="inner"></div>
+                    <button>Trở lại</button>
+                </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+</section>
+<script src="../static/flowerInfo.js"></script>
+{% endblock %}
